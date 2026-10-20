@@ -1,0 +1,24 @@
+{
+  "source_url": "https://www.kaggle.com/datasets/bwandowando/spotify-songs-with-attributes-and-lyrics",
+  "dataset_version": 20,
+  "source_file": "songs_with_attributes_and_lyrics.csv",
+  "source_file_bytes": 1545144675,
+  "source_file_crc32": "dc7b0c47",
+  "download_archive_sha256": "62c53ec31e985b2cbf9999cb12a5644620fc559f4807db18ebbb9d36cb5e13fa",
+  "projection_file": "spotify_songs.csv.gz",
+  "projection_sha256": "121d77489325b8423fb01e38473880e89314e51e4f5db33250dac4b4f91ec2f4",
+  "rows": 955320,
+  "columns": [
+    "danceability",
+    "energy",
+    "loudness",
+    "speechiness",
+    "acousticness",
+    "instrumentalness",
+    "liveness",
+    "valence",
+    "tempo"
+  ],
+  "missing_values": 0,
+  "transformation": "Select the nine audio features used in module; preserve every row in source order; gzip CSV."
+}
