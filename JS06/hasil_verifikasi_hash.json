@@ -1,0 +1,19 @@
+{
+  "source": "local reconstruction of reported benchmark inputs; not a new device measurement",
+  "seed": 42,
+  "shape": [
+    10000,
+    128
+  ],
+  "dtype": "float32",
+  "raw_sha256": "670c7af27ff4f3426cbb21ff557541f0d957aa72f8a3701eb8049958465c7652",
+  "colab_reconstructed_sha256": "783dd82e745f3eafd4b49484f1e71fe54f1c1b47de00d02ae2b4d93eb0464f3c",
+  "android_reconstructed_sha256": "219c93e6ba652833ded4abd8d1a11a989b8531a05a200182ca88e94d943a9ab4",
+  "both_reported_hashes_reproduced": true,
+  "byte_identical": false,
+  "numerically_close": true,
+  "rtol": 1e-06,
+  "atol": 1e-06,
+  "max_abs_difference": 3.5762786865234375e-07,
+  "explanation": "StandardScaler float64 versus float32 statistic casting during float32 transform"
+}

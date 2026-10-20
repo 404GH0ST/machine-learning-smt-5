@@ -1,0 +1,53 @@
+{
+  "device": "Dimensity 8500 Ultra; RAM 16 GB (spesifikasi dari pengguna)",
+  "reported_hardware": {
+    "chipset": "Dimensity 8500 Ultra",
+    "ram_gb": 16,
+    "phone_model": null,
+    "source": "user statement"
+  },
+  "environment": {
+    "python": null,
+    "platform": "Linux-6.6.102-android15-8-gb01b41c2647c-ab15574720-4k-aarch64-with-libc",
+    "machine": "aarch64",
+    "cpu": "Dimensity 8500 Ultra (dari pengguna)",
+    "logical_cpus": null,
+    "ram_gib": 11.0943603515625,
+    "versions": {
+      "numpy": "2.4.4",
+      "scikit-learn": "1.8.0",
+      "annoy": "1.17.3",
+      "hnswlib": "0.8.0"
+    }
+  },
+  "parameters": {
+    "n_samples": 10000,
+    "dimensions": 128,
+    "k": 10,
+    "annoy_trees": 10,
+    "hnsw_M": 16,
+    "hnsw_ef_construction": 200,
+    "hnsw_ef": 200
+  },
+  "data_sha256": "219c93e6ba652833ded4abd8d1a11a989b8531a05a200182ca88e94d943a9ab4",
+  "seconds": {
+    "Exact NN": 0.557,
+    "Annoy": 0.918,
+    "HNSW": 4.689
+  },
+  "recall_at_10": {
+    "Exact NN": 1.0,
+    "Annoy": 0.1681,
+    "HNSW": 0.9806
+  },
+  "reported_output_path": "/storage/emulated/0/Android/data/ru.iiec.pydroid3/files/hasil_android.json",
+  "label": "android",
+  "measurement_source": "user_provided_console_output",
+  "timing_scope": "index construction plus all database rows as queries",
+  "reported_precision": {
+    "seconds_decimal_places": 3,
+    "recall_decimal_places": 4
+  },
+  "first_query_neighbors": null,
+  "source_note": "Transkripsi output konsol yang dikirim pengguna; bukan berkas JSON asli atau hasil pengukuran lokal. Nilai yang tidak diberikan disimpan null."
+}
