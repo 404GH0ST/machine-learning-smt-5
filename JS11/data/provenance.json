@@ -1,0 +1,31 @@
+{
+  "source": "Lampiran asli modul GitBook Polinema 2025/2026",
+  "files": [
+    {
+      "file": "images.zip",
+      "url": "https://3041032130-files.gitbook.io/~/files/v0/b/gitbook-x-prod.appspot.com/o/spaces%2F5CvtE8Xh9b75jKUaRr5Y%2Fuploads%2FPS7Ex7o5Yo4EClMEuPGE%2Fimages.zip?alt=media&token=86b8ed48-d5b1-4ac0-bf07-1482521c21fc",
+      "bytes": 28845089,
+      "sha256": "6b44968761ffcaa80574b9374771977e42ce17fc6bb3b9efbc9ac1e7ad601283"
+    },
+    {
+      "file": "voice.csv",
+      "url": "https://3041032130-files.gitbook.io/~/files/v0/b/gitbook-x-prod.appspot.com/o/spaces%2F5CvtE8Xh9b75jKUaRr5Y%2Fuploads%2Fv7RHnCSAbQRjwJX7o36o%2Fvoice.csv?alt=media&token=d5bad3d3-e5c4-4515-803c-bb4ea198fda9",
+      "bytes": 1065381,
+      "sha256": "96303b30acb620724daea3f71cdf27d0ab5818342ab9825add0a7a4e0a898a22"
+    },
+    {
+      "file": "lfw_min60.npz",
+      "url": "https://ndownloader.figshare.com/files/5976015",
+      "archive_sha256": "b47c8422c8cded889dc5a13418c4bc2abbda121092b3533a83306f90d900100a",
+      "sha256": "62b2131d262dbfa40fb960a0662fae28a90762197574db67dea69a9769e8f4ed",
+      "bytes": 13426691,
+      "transformation": "sklearn.datasets.fetch_lfw_people(min_faces_per_person=60, resize=0.5), saved numeric arrays and target_names to NPZ",
+      "rows": 1348,
+      "classes": 8,
+      "image_shape": [
+        62,
+        47
+      ]
+    }
+  ]
+}
