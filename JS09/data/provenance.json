@@ -1,0 +1,23 @@
+{
+  "source": "Lampiran asli modul GitBook Polinema 2025/2026",
+  "files": [
+    {
+      "file": "voice.csv",
+      "url": "https://3041032130-files.gitbook.io/~/files/v0/b/gitbook-x-prod.appspot.com/o/spaces%2F5CvtE8Xh9b75jKUaRr5Y%2Fuploads%2Fv7RHnCSAbQRjwJX7o36o%2Fvoice.csv?alt=media&token=d5bad3d3-e5c4-4515-803c-bb4ea198fda9",
+      "bytes": 1065381,
+      "sha256": "96303b30acb620724daea3f71cdf27d0ab5818342ab9825add0a7a4e0a898a22"
+    },
+    {
+      "file": "iris.csv",
+      "url": "https://3041032130-files.gitbook.io/~/files/v0/b/gitbook-x-prod.appspot.com/o/spaces%2F5CvtE8Xh9b75jKUaRr5Y%2Fuploads%2FQTyyBdSBRJWE4J8SUjjr%2Firis.csv?alt=media&token=f0ebca2e-8dc4-41cd-a0ce-37741bfdcb87",
+      "bytes": 3878,
+      "sha256": "f7fac79ad999fd2d001fd012dd70c0f42c738a7e7cfb7069e71371b55c29341e"
+    },
+    {
+      "file": "spam.csv",
+      "url": "https://3041032130-files.gitbook.io/~/files/v0/b/gitbook-x-prod.appspot.com/o/spaces%2F5CvtE8Xh9b75jKUaRr5Y%2Fuploads%2FAmbExXlgeOySgkTA0OfS%2Fspam.csv?alt=media&token=14477551-ac5c-4bf7-84ab-70f53a129452",
+      "bytes": 503663,
+      "sha256": "440e6ea9fa825578abfdd7b7932ef8393d72ef86c0c33f64676705ce40b1dfc2"
+    }
+  ]
+}
