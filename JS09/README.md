@@ -11,3 +11,9 @@
 Dataset: [provenance dan checksum](data/provenance.json).
 
 Kode praktikum mengikuti modul; penyesuaian dijelaskan pada notebook masing-masing. Cara menjalankan tersedia di [README utama](../README.md).
+
+## Kesesuaian instruksi GitBook
+
+Praktikum 1 mencakup eksplorasi/visualisasi Iris, split 70:30, standardisasi, kNN, evaluasi, dan grafik k. Praktikum 2 mencakup data dummy, label, visualisasi, serta evaluasi MultinomialNB dan GaussianNB. Praktikum 3 mencakup preprocessing SMS, encoding, CountVectorizer, dan evaluasi MultinomialNB.
+
+Tugas 1 memuat klasifikasi male/female dari voice.csv, eksperimen subset fitur dan nilai k, grafik, fitur terpilih, serta alasan pemilihan. Tugas 2 membandingkan CountVectorizer dan TF-IDF dengan stop words aktif pada spam.csv, evaluasi, dan kesimpulan. Deduplikasi dan validasi silang pada tugas dijelaskan di notebook.
