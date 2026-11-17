@@ -15,3 +15,6 @@ ipykernel==7.4.0
 ipywidgets==8.1.9
 nbformat==5.11.1
 nbclient==0.11.0
+annoy==1.17.3   # di macOS clang terbaru: ANNOY_COMPILER_ARGS="-O2,-std=c++14" uv pip install annoy==1.17.3 (flag bawaan merusak hasil query)
+faiss-cpu==1.15.1
+hnswlib==0.8.0
