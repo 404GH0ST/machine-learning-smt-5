@@ -63,3 +63,7 @@ Waktu mencakup build index + seluruh query. Pada run ini, waktu total di HP lebi
 [Hasil Colab](hasil_colab.json) dan [hasil Android](hasil_android.json) merupakan transkripsi output konsol, bukan JSON asli yang diunggah. Hasil tersedia dengan presisi waktu tiga angka desimal dan recall empat angka desimal. Versi Python/model CPU Colab/jumlah thread tidak diberikan. RAM HP 16 GB berasal dari pengguna, sedangkan RAM terbaca psutil 11,094 GiB dicatat terpisah.
 
 Kedua hash berbeda karena pembulatan StandardScaler float32 antar versi. Rekonstruksi lokal berhasil menghasilkan kedua hash persis dengan selisih nilai maksimum sekitar 3,58×10⁻⁷; bukti tersimpan pada [hasil_verifikasi_hash.json](hasil_verifikasi_hash.json) dan notebook tugas. Data tidak identik byte, sehingga tabel merupakan perbandingan deskriptif. Sumber perubahan operasi dapat dilihat pada [kode scikit-learn 1.6.1](https://github.com/scikit-learn/scikit-learn/blob/1.6.1/sklearn/preprocessing/_data.py) dan [1.8.0](https://github.com/scikit-learn/scikit-learn/blob/1.8.0/sklearn/preprocessing/_data.py).
+
+## PBL - Malicious URL Detection
+
+[PBL_Malicious_URL_244107020049_Agus.ipynb](PBL_Malicious_URL_244107020049_Agus.ipynb) menerapkan langkah jobsheet ini pada dataset PBL `Malicious URL Detection.csv` (783.705 URL, 7 kelas). Fitur bersama ada di [`pbl_url.py`](../pbl_url.py).
