@@ -25,3 +25,9 @@ Perbedaan dari modul:
 - Versi di `requirements.txt` dikunci sama dengan environment training.
 - Model disimpan dengan `include_optimizer=False` (18 MB, bukan 53 MB).
 - `README.md` berisi header konfigurasi Space.
+
+## PBL - Malicious URL Detection
+
+[PBL_Malicious_URL_244107020049_Agus.ipynb](PBL_Malicious_URL_244107020049_Agus.ipynb) menerapkan langkah jobsheet ini pada dataset PBL `Malicious URL Detection.csv` (783.705 URL, 7 kelas). Fitur bersama ada di [`pbl_url.py`](../pbl_url.py).
+
+Deploy PBL ada di [url-project/](url-project/): detektor URL berbahaya (Flask + Docker) memakai model `url_model.h5`, `scaler.pkl`, dan `pbl_url.py` yang sama dengan training.
