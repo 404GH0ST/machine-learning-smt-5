@@ -14,3 +14,7 @@ Dataset: [provenance](data/provenance.json). Kode utama mengikuti modul dan mema
 - `load_boston` sudah dihapus sejak scikit-learn 1.2, sehingga data Boston yang sama dibaca dari sumber asli StatLib (`data/boston.txt`).
 
 Setiap perbandingan konfigurasi dijalankan pada beberapa seed. Analisisnya merujuk jurnal yang dicantumkan di bagian *Rujukan* tiap notebook.
+
+## PBL - Malicious URL Detection
+
+[PBL_Malicious_URL_244107020049_Agus.ipynb](PBL_Malicious_URL_244107020049_Agus.ipynb) menerapkan langkah jobsheet ini pada dataset PBL `Malicious URL Detection.csv` (783.705 URL, 7 kelas). Fitur bersama ada di [`pbl_url.py`](../pbl_url.py).
