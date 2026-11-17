@@ -17,3 +17,7 @@ Kode praktikum mengikuti modul; penyesuaian dijelaskan pada notebook masing-masi
 Praktikum 1 mencakup eksplorasi/visualisasi Iris, split 70:30, standardisasi, kNN, evaluasi, dan grafik k. Praktikum 2 mencakup data dummy, label, visualisasi, serta evaluasi MultinomialNB dan GaussianNB. Praktikum 3 mencakup preprocessing SMS, encoding, CountVectorizer, dan evaluasi MultinomialNB.
 
 Tugas 1 memuat klasifikasi male/female dari voice.csv, eksperimen subset fitur dan nilai k, grafik, fitur terpilih, serta alasan pemilihan. Tugas 2 membandingkan CountVectorizer dan TF-IDF dengan stop words aktif pada spam.csv, evaluasi, dan kesimpulan. Deduplikasi dan validasi silang pada tugas dijelaskan di notebook.
+
+## PBL - Malicious URL Detection
+
+[PBL_Malicious_URL_244107020049_Agus.ipynb](PBL_Malicious_URL_244107020049_Agus.ipynb) menerapkan langkah jobsheet ini pada dataset PBL `Malicious URL Detection.csv` (783.705 URL, 7 kelas). Fitur bersama ada di [`pbl_url.py`](../pbl_url.py).
