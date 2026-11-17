@@ -18,3 +18,7 @@ Dataset: [provenance](data/provenance.json). Arsip cat-dog (233 MB) tidak di-com
 ## CNN untuk teks
 
 Sesuai arahan dosen, notebook eksperimen mengulang langkah Praktikum 1 dan 2 pada data teks. `Conv2D` diganti `Embedding` + `Conv1D`. Hasilnya dibandingkan dengan Kim-CNN dan baseline TF-IDF + model linier, disertai rujukan jurnal.
+
+## PBL - Malicious URL Detection
+
+[PBL_Malicious_URL_244107020049_Agus.ipynb](PBL_Malicious_URL_244107020049_Agus.ipynb) menerapkan langkah jobsheet ini pada dataset PBL `Malicious URL Detection.csv` (783.705 URL, 7 kelas). Fitur bersama ada di [`pbl_url.py`](../pbl_url.py).
