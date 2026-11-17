@@ -1,0 +1,18 @@
+{
+  "source": "Dataset modul GitBook Polinema 2025/2026 JS14",
+  "files": [
+    {
+      "file": "catdog.zip",
+      "used_by": "Praktikum_1",
+      "url": "https://drive.google.com/file/d/1vYrqBI1VmiXXJd5sgtKK2nuQvC8T1ryb/view?usp=drive_link",
+      "bytes": 232567983,
+      "sha256": "866b75276dd83d3c2a64811c44b1f74ed2bee200ed03d930d89738661997e933",
+      "contents": "dataset/training_set/{cats,dogs} 4000+4000, dataset/test_set/{cats,dogs} 1000+1000, dataset/single_prediction 2 jpg",
+      "git": "tidak di-commit (233 MB > batas GitHub 100 MB); notebook mengunduh otomatis bila tidak ada"
+    }
+  ],
+  "loaded_by_api": [
+    "Praktikum_2 dan Tugas: tensorflow.keras.datasets.cifar10.load_data(), mnist.load_data()",
+    "Eksperimen CNN Teks: tensorflow.keras.datasets.imdb.load_data(num_words=10000), sklearn.datasets.fetch_20newsgroups (10 kategori, remove headers/footers/quotes)"
+  ]
+}
