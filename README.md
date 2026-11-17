@@ -2,7 +2,7 @@
 
 Nama: **Agus** · NIM: **244107020049**
 
-Pengerjaan lima modul [GitBook Polinema 2025/2026](https://polinema.gitbook.io/jti-modul-praktikum-pembelajaran-mesin-2025-2026). Notebook menggunakan kernel **Python (Miniconda ml-praktikum)**. Kode utama praktikum mengikuti urutan dan blok kode modul; penyesuaian kompatibilitas dijelaskan pada notebook masing-masing. Evaluasi tambahan diletakkan setelah langkah modul.
+Pengerjaan modul [GitBook Polinema 2025/2026](https://polinema.gitbook.io/jti-modul-praktikum-pembelajaran-mesin-2025-2026). Notebook menggunakan kernel **Python (Miniconda ml-praktikum)**. Kode utama praktikum mengikuti urutan dan blok kode modul; penyesuaian kompatibilitas dijelaskan pada notebook masing-masing. Evaluasi tambahan diletakkan setelah langkah modul.
 
 | Modul | Folder | Praktikum | Tugas |
 | --- | --- | --- | --- |
@@ -11,10 +11,24 @@ Pengerjaan lima modul [GitBook Polinema 2025/2026](https://polinema.gitbook.io/j
 | JS06 Regresi | [JS06_Regresi](JS06_Regresi/) | 1: OLS; 2: SVR | Multiple Linear Regression biaya medis |
 | JS09 Klasifikasi | [JS09](JS09/) | 1: kNN; 2–3: Naive Bayes | 1: fitur/k suara; 2: CountVectorizer vs TF-IDF |
 | JS11 Klasifikasi 2 | [JS11](JS11/) | 1–3: SVM sintetis; 4: wajah; 5: siang/malam | SVM suara dan histogram HSV siang/malam |
+| JS13 ANN dan Evaluasi Classifier | [JS13](JS13/) | 1: JST manual XOR; 2: Keras Iris; 3: regresi dummy dan Boston | JST MNIST: neuron, layer, waktu, Sigmoid vs ReLU |
+| JS14 CNN | [JS14](JS14/) | 1: cat vs dog; 2: CIFAR-10; tambahan: CNN teks (IMDB, 20 Newsgroups) | CIFAR-10 > 80% dan CNN MNIST |
+| JS15 Pipeline & Deployment | [JS15](JS15/) | 1: Day vs Night HOG + NN; 2: Flask + Docker untuk Hugging Face | Deploy MLP harga rumah Boston |
 
-Total **24 notebook: 18 praktikum dan 6 tugas**. Seluruh **24 notebook menyimpan output dan telah divalidasi di Jupyter Miniconda**. Notebook tugas ANN mengolah hasil Colab/PyDroid3 yang dikirim pengguna; angka pengukuran perangkat tidak diganti dengan benchmark lokal. Dua modul bernomor JS06 dipisahkan agar ANN dan regresi tidak saling menimpa. File menggunakan pola `Praktikum_N_244107020049_Agus.ipynb` dan `Tugas_Praktikum_244107020049_Agus.ipynb`; JS09 memiliki `Tugas_1` dan `Tugas_2`.
+JS05–JS11 berisi **24 notebook (18 praktikum dan 6 tugas)** yang divalidasi di Jupyter Miniconda. JS13–JS15 menambah **11 notebook (7 praktikum, 1 eksperimen CNN teks, dan 3 tugas)** yang dijalankan di `.venv`. Semua notebook menyimpan output. Notebook tugas ANN mengolah hasil Colab/PyDroid3 yang dikirim pengguna; angka pengukuran perangkat tidak diganti dengan benchmark lokal. Dua modul bernomor JS06 dipisahkan agar ANN dan regresi tidak saling menimpa. File menggunakan pola `Praktikum_N_244107020049_Agus.ipynb` dan `Tugas_Praktikum_244107020049_Agus.ipynb`; JS09 memiliki `Tugas_1` dan `Tugas_2`.
 
-## Menjalankan di Jupyter Miniconda
+## Environment JS13–JS15 (`.venv`)
+
+Mulai JS13, notebook memakai `.venv` di root repositori (Python 3.12, TensorFlow 2.21, CPU), bukan environment Miniconda. GPU Apple M4 lewat `tensorflow-metal` 1.2.0 (versi terbaru, hanya mendukung TensorFlow 2.18) sudah dicoba. Training memang sekitar 1,85× lebih cepat, tetapi hasilnya salah: MLP MNIST yang di CPU mencapai 96,9% hanya mendapat 74% di GPU, dan dengan SGD akurasinya kolaps ke 0%. Karena itu semua notebook dijalankan di CPU.
+
+```sh
+uv venv --python 3.12 && uv pip install -r requirements.txt
+.venv/bin/jupyter lab        # pilih kernel Python 3 (.venv)
+```
+
+Sesuai arahan dosen, JS13–JS15 mengikuti langkah dan dataset jobsheet. Perbandingan model dirujuk ke jurnal, dan CNN juga dicoba pada data teks (JS14).
+
+## Menjalankan di Jupyter Miniconda (JS05–JS11)
 
 Environment yang digunakan pada komputer ini berada di `/Volumes/External/miniconda3/envs/ml-praktikum`.
 
