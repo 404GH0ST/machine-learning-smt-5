@@ -17,6 +17,25 @@ Pengerjaan modul [GitBook Polinema 2025/2026](https://polinema.gitbook.io/jti-mo
 
 JS05–JS11 berisi **24 notebook (18 praktikum dan 6 tugas)** yang divalidasi di Jupyter Miniconda. JS13–JS15 menambah **11 notebook (7 praktikum, 1 eksperimen CNN teks, dan 3 tugas)** yang dijalankan di `.venv`. Semua notebook menyimpan output. Notebook tugas ANN mengolah hasil Colab/PyDroid3 yang dikirim pengguna; angka pengukuran perangkat tidak diganti dengan benchmark lokal. Dua modul bernomor JS06 dipisahkan agar ANN dan regresi tidak saling menimpa. File menggunakan pola `Praktikum_N_244107020049_Agus.ipynb` dan `Tugas_Praktikum_244107020049_Agus.ipynb`; JS09 memiliki `Tugas_1` dan `Tugas_2`.
 
+## PBL - Malicious URL Detection
+
+Dataset PBL `Malicious URL Detection.csv` (783.705 URL; kelas `benign`, `phishing`, `defacement`, `malware`, `legitimate`, `spam`, `Exploit`) diterapkan pada setiap jobsheet yang dapat memakainya. Setiap folder berisi `PBL_Malicious_URL_244107020049_Agus.ipynb`. Fungsi muat data, normalisasi URL, dan 28 fitur leksikal ada di [`pbl_url.py`](pbl_url.py), sehingga semua notebook dan aplikasi deploy memakai definisi fitur yang sama.
+
+| Jobsheet | Penerapan pada URL |
+| --- | --- |
+| [JS02](JS02/PBL_Malicious_URL_244107020049_Agus.ipynb) | EDA, outlier, korelasi, missing/duplikat, encoding, standardisasi, tokenisasi URL |
+| [JS03](JS03/PBL_Malicious_URL_244107020049_Agus.ipynb) | Ekstraksi fitur leksikal, seleksi fitur (F/MI), random vs stratified split, CV, BoW vs TF-IDF n-gram karakter |
+| [JS04](JS04/PBL_Malicious_URL_244107020049_Agus.ipynb) | KMeans (elbow, silhouette), MiniBatchKMeans seluruh data, DBSCAN |
+| [JS05](JS05/PBL_Malicious_URL_244107020049_Agus.ipynb) | HDBSCAN vs DBSCAN, scale invariance, `min_cluster_size`/`min_samples`, silhouette dan DBI |
+| [JS06](JS06/PBL_Malicious_URL_244107020049_Agus.ipynb) | Pencarian URL mirip: exact, Annoy, FAISS IVF/PQ, HNSW (recall, QPS, kNN) |
+| [JS09](JS09/PBL_Malicious_URL_244107020049_Agus.ipynb) | kNN (k dan jumlah fitur), GaussianNB, MultinomialNB/ComplementNB dengan Count vs TF-IDF |
+| [JS11](JS11/PBL_Malicious_URL_244107020049_Agus.ipynb) | SVM enam kombinasi split/kernel, pengaruh C, GridSearch, LinearSVC TF-IDF seluruh data |
+| [JS13](JS13/PBL_Malicious_URL_244107020049_Agus.ipynb) | MLP Keras, evaluasi classifier lengkap (CM, ROC), arsitektur, aktivasi, class weight |
+| [JS14](JS14/PBL_Malicious_URL_244107020049_Agus.ipynb) | CNN level karakter (pola modul dan multi-kernel ala eXpose) vs TF-IDF + LinearSVC |
+| [JS15](JS15/PBL_Malicious_URL_244107020049_Agus.ipynb) | Pipeline dan deploy Flask + Docker di [JS15/url-project](JS15/url-project/) |
+
+Tidak dipakai di **JS01** (instalasi environment dan esai etika, tanpa pengolahan data) dan **JS06 Regresi** (dataset tidak memiliki target kontinu).
+
 ## Environment JS13–JS15 (`.venv`)
 
 Mulai JS13, notebook memakai `.venv` di root repositori (Python 3.12, TensorFlow 2.21, CPU), bukan environment Miniconda. GPU Apple M4 lewat `tensorflow-metal` 1.2.0 (versi terbaru, hanya mendukung TensorFlow 2.18) sudah dicoba. Training memang sekitar 1,85× lebih cepat, tetapi hasilnya salah: MLP MNIST yang di CPU mencapai 96,9% hanya mendapat 74% di GPU, dan dengan SGD akurasinya kolaps ke 0%. Karena itu semua notebook dijalankan di CPU.
